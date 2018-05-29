@@ -21,6 +21,7 @@
         "webpack-cli": "^2.1.4"
     },
     "dependencies": {
-        "fullcalendar": "^3.9.0"
+        "fullcalendar": "^3.9.0",
+        "moment": "^2.22.1"
     }
 }
