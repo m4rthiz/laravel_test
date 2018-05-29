@@ -6,12 +6,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.css"/>
+
+    <style>
+        .container{
+
+        }
+        .fc-toolbar{
+
+        }
+    </style>
 </head>
 <body>
 <div class="container">
+
     <div class="panel panel-primary">
         <div class="panel-heading">
-            MY Calender
+            agendas reservations
         </div>
         <div class="panel-body" >
             {!! $calendar->calendar() !!}
@@ -19,5 +29,6 @@
         </div>
     </div>
 </div>
+<script src='fullcalendar/lang/fr.js'></script>
 </body>
 </html>

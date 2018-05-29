@@ -21,7 +21,20 @@ class EventController extends Controller
                 );
             }
         }
-        $calendar = Calendar::addEvents($events);
+        //$calendar = Calendar::addEvents($events);
+
+        $calendar = \Calendar::addEvents($events)
+                             ->setOptions([ //set fullcalendar options
+                                 'header' => array('left' => 'prev,next today', 'center' => 'title', 'right' => ''),
+
+                                 'locale' => 'fr',
+                                 'editable'=> true,
+                                 'navLinks'=> true,
+                                 'selectable'  => true,
+                                 'defaultView' => 'month'
+                             ]);  //add an array with addEvents
+
+
 
         return view('calendar', compact('calendar'));
     }
