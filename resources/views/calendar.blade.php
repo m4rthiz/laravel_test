@@ -27,7 +27,7 @@
 
     <div class="panel panel-primary">
         <div class="panel-heading">
-            agendas reservations
+            Agenda reservations
         </div>
         <div class="panel-body" >
             {!! $calendar->calendar() !!}
